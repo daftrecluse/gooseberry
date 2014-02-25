@@ -5,4 +5,15 @@
 	width: Ti.UI.SIZE,
 	height: Ti.UI.SIZE,
 	color: "#000"
-} 
+},
+"#calendar":{
+	layout: "vertical",
+	height:Ti.UI.SIZE,
+	top:100
+},
+"#monthLabel":{
+	color:"#000",
+	height:Ti.UI.SIZE,
+	width:Ti.UI.SIZE,
+	
+}

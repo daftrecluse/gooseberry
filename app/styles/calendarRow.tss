@@ -1,0 +1,5 @@
+
+"#container" : {
+  layout: "horizontal",
+  height:Ti.UI.SIZE
+}
