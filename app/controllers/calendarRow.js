@@ -14,12 +14,19 @@ for (var i = 0; i < rowItemsLength; i++) {
 		  text: args.data[i],
 		  textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
 		  width: calendarCellWidth, 
-		  height: Ti.UI.SIZE
+		  height: 40,
+		  borderColor: '#dddddd',
 		});
 	if(monthCurrent){
 		if(monthCurrent[i] === 0){
 			cell.setColor("#eaeaea");
 		}
 	}
+
+	cell.addEventListener('click', function(e){
+		rect = e.source.getRect();
+		Ti.API.info(rect.x);
+		Ti.API.info(rect.y);
+	});
 	$.container.add(cell);
 };
